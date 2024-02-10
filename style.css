@@ -42,15 +42,15 @@ nav{
 }
 #hero-shape {
     position: absolute;
-    width: 46vw;
-    height: 36vw;
+    width: 100vw;
+    height: 70vw;
     right: 0;
-    top: 65vh;
+    top: 15vh;
 }
 #hero-1 {
     background: #FE320A;
     height: 10vw;
-    width: 15vw;
+    width: 10vw;
     border-radius: 50%;
     position: absolute;
     animation-name: anime2;
@@ -58,10 +58,72 @@ nav{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    filter: blur(90px);
+    filter: blur(100px);
 }
 
 @keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+
+#hero-shape1 {
+    position: absolute;
+    width: 15vw;
+    height: 10vw;
+    right: 0;
+    top: 40vh;
+}
+#hero-2 {
+    background: #FE320A;
+    height: 10vw;
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(100px);
+}
+
+@keyframes anime3 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+#hero-shape2 {
+    position: absolute;
+    width: 40vw;
+    height: 30vw;
+    right: 0;
+    top: 60vh;
+}
+#hero-3 {
+    background: #FE320A;
+    height: 10vw;
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(90px);
+}
+
+@keyframes anime3 {
     from {
         transform: translate(5%, -5%);
     }
@@ -148,4 +210,10 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: white;
+}
+.upper-emoji{
+    font-size: 30px;
+}
+span{
+    color: #ff004f;
 }
