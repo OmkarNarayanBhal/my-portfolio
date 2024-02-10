@@ -217,3 +217,42 @@ nav ul li a:hover::after{
 span{
     color: #ff004f;
 }
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.link.one::after{
+    width: 50%;
+    
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active{
+    display: block;
+}
