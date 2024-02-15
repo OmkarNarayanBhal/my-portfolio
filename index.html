@@ -81,6 +81,15 @@
         </div>
     </div>
 
-     
+    <script>
+        var links=document.getElementsByClassName("link");
+        var contents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(link of links){
+                link.classList.remove("link one")
+            }
+        }
+    </script> 
 </body>
 </html>
